@@ -1,23 +1,18 @@
 ﻿using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Shy_Panda
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         public Form1()
         {
             InitializeComponent();
+            Camera();
+            imagepicture.SizeMode = PictureBoxSizeMode.Zoom;
         }
         public void Camera()
         {
@@ -38,15 +33,15 @@ namespace Shy_Panda
                         image.Draw(hEye.rect, new Bgr(Color.Blue), 1);
                         MCvFont font = new MCvFont(FONT.CV_FONT_HERSHEY_COMPLEX, 0.3, 0.3);
                         image.Draw("Goz", ref font, new Point(hEye.rect.X, hEye.rect.Y), new Bgr(Color.Yellow));
-                        Panda.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\ShyPanda\\ShyPanda\\Images\\pandautanan.png");
+                        imagepicture.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\ShyPanda\\ShyPanda\\Images\\pandautanan.png");
                         step = "1";
                     }
                 }
                 if (step != "1")
                 {
-                    Panda.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\ShyPanda\\ShyPanda\\Images\\panda.gif");
+                    imagepicture.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\ShyPanda\\ShyPanda\\Images\\panda.gif");
                 }
-                CameraPicture.Image = image.ToBitmap();
+                FaceImagepicture.Image = image.ToBitmap();
                 step = "";
             };
         }
