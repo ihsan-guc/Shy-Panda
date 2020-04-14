@@ -36,9 +36,9 @@
             // 
             // imagepicture
             // 
-            this.imagepicture.Location = new System.Drawing.Point(23, 138);
+            this.imagepicture.Location = new System.Drawing.Point(23, 119);
             this.imagepicture.Name = "imagepicture";
-            this.imagepicture.Size = new System.Drawing.Size(175, 198);
+            this.imagepicture.Size = new System.Drawing.Size(247, 236);
             this.imagepicture.TabIndex = 0;
             this.imagepicture.TabStop = false;
             // 

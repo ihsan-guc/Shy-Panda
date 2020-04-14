@@ -33,13 +33,13 @@ namespace Shy_Panda
                         image.Draw(hEye.rect, new Bgr(Color.Blue), 1);
                         MCvFont font = new MCvFont(FONT.CV_FONT_HERSHEY_COMPLEX, 0.3, 0.3);
                         image.Draw("Goz", ref font, new Point(hEye.rect.X, hEye.rect.Y), new Bgr(Color.Yellow));
-                        imagepicture.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\ShyPanda\\ShyPanda\\Images\\pandautanan.png");
+                        imagepicture.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\Shy-Panda\\Shy-Panda\\Image\\Shy_panda.png");
                         step = "1";
                     }
                 }
                 if (step != "1")
                 {
-                    imagepicture.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\ShyPanda\\ShyPanda\\Images\\panda.gif");
+                    imagepicture.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\Shy-Panda\\Shy-Panda\\Image\\panda_dance.gif");
                 }
                 FaceImagepicture.Image = image.ToBitmap();
                 step = "";

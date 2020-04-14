@@ -147,6 +147,8 @@
     <Content Include="DLL\opencv_video2410.dll" />
     <Content Include="DLL\opencv_videostab2410.dll" />
     <Content Include="DLL\ZedGraph.dll" />
+    <Content Include="Image\panda_dance.gif" />
+    <Content Include="Image\Shy_panda.png" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
